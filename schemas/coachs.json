@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft-07/schema",
+    "$id":"https://example.com/coachs.json",
+    "title":"coachs",
+    "description": "create a table of coachs",
+    "type":"object",
+    "properties": {
+        "id":{
+            "type":"number"
+        },
+
+        "name":{"$ref":"#definitions/name"},
+        "age":{
+            "type":"number"
+        },
+
+        "phoneNumber":{
+            "type":["number","null"]
+        },
+
+        "eamil":{
+            "type":"string",
+            "format":"email"
+        },
+
+        "members_id":{
+            "type":"number"
+        }
+
+    },
+    "required":["id","name","age","email","members_id"]
+}

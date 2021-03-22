@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft-07/sechema",
+    "$id":"https://example.com/members.sechema.json",
+    "title":"members",
+    "description":"create a table of membres",
+    "type":"object",
+    
+    "definitions":{
+        "name":{
+            "type":"object",
+            "properties":{
+                "name":{"type":"string"}        
+        
+             }
+        }
+    },
+    
+
+    "properties":{
+        "id":{
+            "type":"number"
+        },
+        "lience":{  
+            "type":"boolean"
+        },
+        "registration-date_type":{
+            "type":["string", "null"],
+            "format": "date"
+        },
+        "clubs_id":{
+            "type":"number"
+        }
+    },
+
+    "required":["id","lience","clubs_id","name"]
+}
