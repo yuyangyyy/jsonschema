@@ -1,0 +1,11 @@
+{
+    "id": 1,
+    "name": "clubs",
+    "address": {
+        "street_type": "Street",
+        "city": "Paris",
+        "state": "France"
+    },
+    "phoneNumber": "23456",
+    "email": "club@gmail.com"
+}
